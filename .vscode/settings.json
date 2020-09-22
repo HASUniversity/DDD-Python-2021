@@ -1,3 +1,4 @@
 {
-    "python.pythonPath": "C:\\Software\\python36\\python.exe"
+    "python.pythonPath": "C:\\Software\\python36\\python.exe",
+    "python.dataScience.jupyterServerURI": "local"
 }
