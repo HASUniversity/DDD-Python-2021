@@ -175,6 +175,7 @@ def transform_raster_image (rasterfile_name_in, coordinate_system_to) :
 
         # Execute transformation
         gdal.Warp(rasterfile_name_out,input_raster,dstSRS=epsg_code)   
+        input_raster = None
         
         # Rename output file to input filename
         os.rename(rasterfile_name_in, rasterfile_name_in + '.old')
