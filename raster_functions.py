@@ -174,7 +174,7 @@ def transform_raster_image (rasterfile_name_in, coordinate_system_to) :
         rasterfile_name_out = rasterfile_name_in[:-4] + '_' + str(coordinate_system_to) + '.tif'
 
         # Execute transformation
-        out = gdal.Warp(rasterfile_name_out,input_raster,dstSRS=epsg_code)   
+        gdal.Warp(rasterfile_name_out,input_raster,dstSRS=epsg_code)   
         input_raster = None
         out = None
         
