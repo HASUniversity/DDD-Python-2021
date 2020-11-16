@@ -45,3 +45,7 @@ for inleeslocatie in open(r'inleeslocaties.csv') :
 # Voeg lijsten samen tot dataframe
 df = pd.DataFrame(list(zip(datum_list, ndvi_list, locatie_list)), columns =['datum', 'ndvi', 'loc']) 
 print(df.head(5))
+
+# Export to Excel and CSV
+df.to_excel('NDVI_loc.xlsx', index = False)
+df.to_csv('NDVI_loc.csv', index = False)
